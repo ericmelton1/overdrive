@@ -2,7 +2,7 @@
 /*
 Key points:
 -Rather than authenticate each time the discovery API is used, this class stores the authentication token for an hour in a text file ($overdrive_auth_token_file) that needs to be created (and made writable) on your server.
--Patron authentication tokens (for placing holds, checking out, etc.) are stored in a cookie on the patrons browser (see $_COOKIE['od_circulation_token']).
+-Patron authentication tokens (for placing holds, checking out, etc.) are stored in a cookie on the patron's browser (see $_COOKIE['od_circulation_token']).
 -The class uses curl to make the API requests (see require_once('curl.php'); below). You'll need the curl function included in the same GitHub repository. 
 */
 class overdrive_api {
